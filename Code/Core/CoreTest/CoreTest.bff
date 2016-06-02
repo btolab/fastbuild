@@ -84,6 +84,10 @@
 												'TestFrameWork-Lib-$Platform$-$Config$' }
 			.LinkerOutput					= '$OutputBase$\Core\CoreTest\CoreTest.exe'
 			.LinkerOptions					+ ' /SUBSYSTEM:CONSOLE'
+											+ ' notelemetry.obj'
+											+ ' libcmt.lib'
+											+ ' libvcruntime.lib'
+											+ ' libucrt.lib'
 											+ ' kernel32.lib'
 											+ ' Ws2_32.lib'
 											+ ' LIBCMT.LIB'

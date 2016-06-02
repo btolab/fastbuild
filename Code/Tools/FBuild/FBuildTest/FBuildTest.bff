@@ -89,6 +89,10 @@
 											'LZ4-Lib-$Platform$-$Config$' }
 			.LinkerOutput				= '$OutputBase$/Tools/FBuild/FBuildTest/FBuildTest.exe'
 			.LinkerOptions				+ ' /SUBSYSTEM:CONSOLE'
+										+ ' notelemetry.obj'
+										+ ' libcmt.lib'
+										+ ' libvcruntime.lib'
+										+ ' libucrt.lib'
 										+ ' kernel32.lib'
 										+ ' Ws2_32.lib'
 										+ ' LIBCMT.LIB'

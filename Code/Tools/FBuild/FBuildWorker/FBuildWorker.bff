@@ -91,6 +91,10 @@
 										  }
 			.LinkerOutput				= '$OutputBase$\Tools\FBuild\FBuildWorker\FBuildWorker.exe'
 			.LinkerOptions				+ ' /SUBSYSTEM:WINDOWS'
+										+ ' notelemetry.obj'
+										+ ' libcmt.lib'
+										+ ' libvcruntime.lib'
+										+ ' libucrt.lib'
 										+ ' kernel32.lib'
 										+ ' Ws2_32.lib'
 										+ ' LIBCMT.LIB'
