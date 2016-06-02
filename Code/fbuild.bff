@@ -4,6 +4,7 @@
 #import VCINSTALLDIR
 #import WINDOWSSDKDIR
 #import WINDOWSSDKVERSION
+#import TEMP
 
 ;-------------------------------------------------------------------------------
 ; Windows Platform
@@ -21,7 +22,7 @@ Settings
 ;        .Environment	= { "PATH=$VSBasePath$\..\Common7\IDE\;$VSBasePath$\bin\",
 ;                            "TMP=C:\Windows\Temp",
 ;                            "SystemRoot=C:\Windows" }
-        .CachePath		= "C:\.fbuild.cache"
+        .CachePath		= "$TEMP$\.fbuild.cache"
     #endif
     #if __OSX__
         .CachePath		= "/tmp/.fbuild.cache"
